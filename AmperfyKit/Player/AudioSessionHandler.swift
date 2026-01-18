@@ -116,7 +116,7 @@ public class AudioSessionHandler {
     }
   }
 
-  public func configureBackgroundPlayback() {
+  func configureBackgroundPlayback() {
     do {
       try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
       try AVAudioSession.sharedInstance().setActive(true)

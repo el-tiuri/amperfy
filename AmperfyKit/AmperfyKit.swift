@@ -112,9 +112,9 @@ public class AmperKit {
 
   // internal player helper classes that interact only via player callbacks
   private var playerDownloadPreparationHandler: PlayerDownloadPreparationHandler?
-  public private(set) var playerAudioSessionHandler: AudioSessionHandler?
-  public private(set) var playerNowPlayingInfoCenterHandler: NowPlayingInfoCenterHandler?
-  public private(set) var playerRemoteCommandCenterHandler: RemoteCommandCenterHandler?
+  private var playerAudioSessionHandler: AudioSessionHandler?
+  private var playerNowPlayingInfoCenterHandler: NowPlayingInfoCenterHandler?
+  private var playerRemoteCommandCenterHandler: RemoteCommandCenterHandler?
   private var playerNotificationAdapter: PlayerNotificationAdapter?
 
   @MainActor

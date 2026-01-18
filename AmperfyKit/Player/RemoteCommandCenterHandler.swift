@@ -197,7 +197,7 @@ public class RemoteCommandCenterHandler {
     })
   }
 
-  public func changeRemoteCommandCenterControlsBasedOnCurrentPlayableType() {
+  func changeRemoteCommandCenterControlsBasedOnCurrentPlayableType() {
     guard let currentItem = musicPlayer.currentlyPlaying else { return }
     switch currentItem.derivedType {
     case .song:
